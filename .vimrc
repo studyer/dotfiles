@@ -84,7 +84,7 @@ filetype plugin indent on    " required
 
 " Use the Solarized Dark theme
 set background=light
-colorscheme solarized
+colorscheme desert
 let g:solarized_termtrans=1
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
@@ -127,7 +127,8 @@ syntax on
 " Highlight current line
 set cursorline
 " Make tabs as wide as two spaces
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 set expandtab
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
@@ -211,5 +212,4 @@ noremap <leader>exh :! open http://www.phoenixframework.org/v0.9.0/docs<CR>
 noremap <leader>ehp :! open https://hex.pm<CR>
 
 noremap <leader>gh :! open https://github.com<CR>
-
 
