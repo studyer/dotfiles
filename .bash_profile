@@ -63,6 +63,14 @@ if [ -x /usr/bin/dircolors  ]; then
     alias egrep='egrep --color=auto'
 fi
 
+export PS1="\[\033[1;35;40m[\033[1;31;40m\u@\h:\w\033[1;35;40m]\033[1;37;40m $\033[0;37;0m\] "
+LC_CTYPE="zh_CN.UTF-8"
+export LC_CTYPE
+LC_ALL="zh_CN.UTF-8"
+export LC_ALL
+LANG="zh_CN.UTF-8"
+export LANG
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
