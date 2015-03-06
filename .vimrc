@@ -83,9 +83,13 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " Use the Solarized Dark theme
-set background=light
-colorscheme desert
+" set background=light
+set background=dark
+colorscheme solarized
 let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+let g:solarized_contrast = "high"
+let g:solarized_visibility= "high"
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
