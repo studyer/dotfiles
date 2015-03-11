@@ -77,6 +77,7 @@ Plugin 'tpope/vim-eunuch'
 Plugin 'vim-scripts/DeleteTrailingWhitespace'
 
 Plugin 'sheerun/vim-polyglot'
+Plugin 'jlanzarotta/bufexplorer'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
