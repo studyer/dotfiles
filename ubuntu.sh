@@ -392,10 +392,12 @@ echo "============================add nginx and php-fpm on startup==============
 echo "Create new nginx init.d file......"
 cd `dirname $0`
 cp init.d.nginx /etc/init.d/nginx
+cp init.d.memcached /etc/init.d/memcached
 chmod +x /etc/init.d/nginx
 update-rc.d -f mysql defaults
 update-rc.d -f nginx defaults
 update-rc.d -f php-fpm defaults
+update-rc.d -f memcached defaults
 cd $cur_dir
 echo "===========================add nginx and php-fpm on startup completed===================="
 
@@ -404,7 +406,7 @@ echo "Starting NMP..."
 /etc/init.d/mysql start
 /etc/init.d/php-fpm start
 /etc/init.d/nginx start
-service mongod start
+/etc/init.d/memcached start
 echo "===========================startup completed===================="
 
 #add 80 port to iptables
