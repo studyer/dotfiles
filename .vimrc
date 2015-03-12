@@ -1,7 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 " Change mapleader
-let mapleader=","
+" let mapleader=","
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -57,8 +57,8 @@ Plugin 'cakebaker/scss-syntax.vim'
 
 Plugin 'chrisbra/Colorizer'
 
-:let g:colorizer_auto_color = 1
-:let g:colorizer_auto_filetype='less,sass,scss,js,css,html'
+let g:colorizer_auto_color = 1
+let g:colorizer_auto_filetype='less,sass,scss,js,css,html'
 let g:colorizer_syntax = 1
 
 Plugin 'tpope/vim-commentary'
